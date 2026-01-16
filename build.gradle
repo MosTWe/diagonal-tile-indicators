@@ -26,10 +26,3 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
     options.release = 11
 }
-
-task runClient(type: JavaExec) {
-    classpath = sourceSets.test.runtimeClasspath
-    mainClass = 'com.diagonaltiles.DiagonalTilePluginTest'
-    jvmArgs = ['-ea']
-    executable = '/opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home/bin/java'
-}
