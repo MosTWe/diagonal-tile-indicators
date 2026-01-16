@@ -10,11 +10,10 @@ repositories {
     mavenCentral()
 }
 
-def runeLiteVersion = '1.12.12'
+def runeLiteVersion = '1.12.+'
 
 dependencies {
     compileOnly group: 'net.runelite', name: 'client', version: runeLiteVersion
-    compileOnly 'org.pf4j:pf4j:3.10.0'
 
     testImplementation group: 'net.runelite', name: 'client', version: runeLiteVersion
     testImplementation 'junit:junit:4.13.2'
